@@ -1,0 +1,757 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>第八课 新聞を読んだりします &#8212; Japanese New Starting  documentation</title>
+    <link rel="stylesheet" href="../_static/material.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="练习题" href="chap16-q.html" />
+    <link rel="prev" title="答案" href="chap15-qa.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=blue-grey data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#book1/chap16" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="Japanese New Starting  documentation"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">Japanese New Starting  documentation</span>
+          <span class="md-header-nav__topic"> 第八课 新聞を読んだりします </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="GET" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search"
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Japanese New Starting  documentation</a></li>
+          <li class="md-tabs__item"><a href="index.html" class="md-tabs__link">第一册</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="Japanese New Starting documentation" class="md-nav__button md-logo">
+      
+        <img src="../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="Japanese New Starting documentation">Japanese New Starting  documentation</a>
+  </label>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#book1-chap16--page-root" class="md-nav__link">第八课 新聞を読んだりします</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id2" class="md-nav__link">课文</a>
+        </li>
+        <li class="md-nav__item"><a href="#id3" class="md-nav__link">会话</a>
+        </li>
+        <li class="md-nav__item"><a href="#id4" class="md-nav__link">生词</a>
+        </li>
+        <li class="md-nav__item"><a href="#id5" class="md-nav__link">句型</a>
+        </li>
+        <li class="md-nav__item"><a href="#id6" class="md-nav__link">语法</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id7" class="md-nav__link">一、接续助词「たり（だり）」</a>
+        </li>
+        <li class="md-nav__item"><a href="#id8" class="md-nav__link">二、接续助词「て」</a>
+        </li>
+        <li class="md-nav__item"><a href="#id9" class="md-nav__link">三、形容词连用形</a>
+        </li>
+        <li class="md-nav__item"><a href="#id10" class="md-nav__link">四、形容动词连用形</a>
+        </li>
+        <li class="md-nav__item"><a href="#id11" class="md-nav__link">五、「には」的用法</a>
+        </li>
+        <li class="md-nav__item"><a href="#id12" class="md-nav__link">六、副助词「だけ」</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#id13" class="md-nav__link">课后练习</a>
+        </li>
+        <li class="md-nav__item"><a href="#id14" class="md-nav__link">补充生词</a>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/book1/chap16.rst.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  
+<h1 id="book1-chap16--page-root">第八课 新聞を読んだりします<a class="headerlink" href="#book1-chap16--page-root" title="Permalink to this headline">¶</a></h1>
+
+<h2 id="id2">课文<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>田中さんは毎朝新聞を読んだり、テレビを見たりします。</p>
+<p>田中さんは駅の売店でスポーツ新聞を読んだり、週刊誌を書いてしたりします。たくさんの人が電車の中で新聞を読んだりしかしを読んだりします。</p>
+<p>日本人は毎日新聞を家で読んだり、電車の中で読んだりします。新聞のかいにテレビを見たり、ラジオを聴いたりしてニュースを知ります。</p>
+<p>日本の新聞は一般紙と専門紙があります。一般紙には朝刊と夕刊があります。専門家にはたくさんの種類があります。スポーツの新聞だったり経済の新聞だったりです。</p>
+<p>新聞社によって同じニュースでも見たしが大きかったり小さかったりします。ケチキン。景色の着方も新聞社によって違います。人々は自分の仕事や趣味によって新聞を選びます。</p>
+
+
+<h2 id="id3">会话<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>張：日本の新聞の種類が多いですね。</p>
+<p>田中：ええ、多いですよ。日本人は毎日家で読んだり、電車の中で読んだりします。</p>
+<p>張：そうですね。朝の電車の中でほとんどの人が新聞を読んだり、週刊誌を読んだり知っていますね。</p>
+<p>田中：張さんは1日何種類の新聞を読みますか？</p>
+<p>張：1種類しか読みません。朝刊と夕刊だけです。</p>
+<p>田中：私は3種類です。一般紙とスポーツ新聞と経済新聞を読みます。</p>
+<p>張：すごいですね。</p>
+<p>田中：新聞のほかに夜家でテレビを見たりラジオを聴いたりします。</p>
+<p>張：色々な方法にニュースを知ることができますね。</p>
+
+
+<h2 id="id4">生词<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<table id="id15">
+<caption><span class="caption-text">生词表</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>单词</p></th>
+<th class="head"><p>词类</p></th>
+<th class="head"><p>释义</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>しゅうかんし[週刊誌]</p></td>
+<td><p>名</p></td>
+<td><p>周刊杂志</p></td>
+</tr>
+<tr class="row-odd"><td><p>ほか[他・外]</p></td>
+<td><p>名</p></td>
+<td><p>另外，其它的，</p></td>
+</tr>
+<tr class="row-even"><td><p>しる[知る]</p></td>
+<td><p>他五</p></td>
+<td><p>了解，知道</p></td>
+</tr>
+<tr class="row-odd"><td><p>いっぱん[一般]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>せんもん[専門]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>ちょうかん[朝刊]</p></td>
+<td><p>名</p></td>
+<td><p>晨报</p></td>
+</tr>
+<tr class="row-even"><td><p>ゆうかん[夕刊]</p></td>
+<td><p>名</p></td>
+<td><p>晚报</p></td>
+</tr>
+<tr class="row-odd"><td><p>けいざい[経済]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>よる[依る]</p></td>
+<td><p>自五</p></td>
+<td><p>根据，依据</p></td>
+</tr>
+<tr class="row-odd"><td><p>おなじ[同じ]</p></td>
+<td><p>形动</p></td>
+<td><p>同样</p></td>
+</tr>
+<tr class="row-even"><td><p>ニュース</p></td>
+<td><p>名</p></td>
+<td><p>news</p></td>
+</tr>
+<tr class="row-odd"><td><p>みだし[見出し]</p></td>
+<td><p>名</p></td>
+<td><p>标题</p></td>
+</tr>
+<tr class="row-even"><td><p>きじ[記事]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>かきかた[書き方]</p></td>
+<td><p>名</p></td>
+<td><p>写法</p></td>
+</tr>
+<tr class="row-even"><td><p>しんぶんしゃ[新聞社]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>ひとびと[人々]</p></td>
+<td><p>名</p></td>
+<td><p>人们</p></td>
+</tr>
+<tr class="row-even"><td><p>えらぶ[選ぶ]</p></td>
+<td><p>他五</p></td>
+<td><p>挑选，选择</p></td>
+</tr>
+<tr class="row-odd"><td><p>すごい</p></td>
+<td><p>形</p></td>
+<td><p>厉害，可怕，了不起，不寻常</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="id5">句型<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>一、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>（形容词连用形かっ、体言／形容动词连用形だっ）たりします・です。／时而……，时而……。
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>見出しが大きかったり小さかったりです。</p></li>
+<li><p>天気が暖かかったり寒かったりします。</p></li>
+<li><p>スポーツの専門だったり、経済だったりします。</p></li>
+<li><p>時間によって、しずかだったり、にぎやかだったりします。</p></li>
+</ul>
+<p>二、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(体言)によって/根据，由于
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>記事の書き方も新聞社によってちがいます。</p></li>
+<li><p>自分の趣味によって新聞を選びます。</p></li>
+<li><p>季節によって服をかえます。</p></li>
+</ul>
+<p>三、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(动词连体形)ことができます。/ 能够……，会……。
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>いろいろな方法でニュースを知ることができます。</p></li>
+<li><p>私は日本語を話すことができます。</p></li>
+<li><p>日本語で文章を書くことができません。</p></li>
+</ul>
+
+
+<h2 id="id6">语法<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+
+<h3 id="id7">一、接续助词「たり（だり）」<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>「たり」接在用言和助动词的连用形之后，动词拨音便及ぐ尾イ音便时变为「だり」，经常多个并列使用，也可以作为连用修饰语修饰后边的用言，有时也可看作一个体言</p>
+<ol class="arabic simple">
+<li><p>表示列举</p></li>
+</ol>
+<p>列举同类或相反的动作、作用，或表示动作、状态的交替发生或反复。</p>
+<ul class="simple">
+<li><p>子供が飛んだり、跳ねたりします。</p></li>
+<li><p>人々が出たり、入ったりしてとても賑やかです。</p></li>
+<li><p>このごろは寒かったり、暖かかったりします。</p></li>
+<li><p>山を越えたり、川を渡ったり、できるだけ直線コースを取ります。</p></li>
+<li><p>出発する前に飲んだり、食ったり、充分腹をこしらえます。</p></li>
+<li><p>着物も綺麗だったり污かったり、さまざまです。</p></li>
+<li><p>彼の話は本当でしたり嘘でしたり、信じることができません。</p></li>
+<li><p>この二つは似たり寄ったりですね。</p></li>
+<li><p>田中さんは来たり来なかったり、決まりがません。</p></li>
+<li><p>ホテルでは、部屋が立派だったり、部屋に風呂場が有ったりすると、値段はずっと高くなります。</p></li>
+<li><p>動物園の熊はいつもおりの中で行ったり来たりします。</p></li>
+<li><p>人間はみんな喜んだり、悲しんだりして、一生を過ごします。</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>表示概括</p></li>
+</ol>
+<p>举出一两个动作、作用，概括同类的其它，这种场合可以只使用一个「たり」，并且最后「たり」可以附加「など」</p>
+<ul class="simple">
+<li><p>日曜日には洗濯をしたり、買い物をしたりします。</p></li>
+<li><p>壁などに落書したりなどしてはいけません。</p></li>
+<li><p>あの人はいつも噓をついたりします。</p></li>
+</ul>
+
+
+<h3 id="id8">二、接续助词「て」<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>接在形容词、动词、助动词的连用形以及五段动词音便形之后。</p>
+<ol class="arabic simple">
+<li><p>表示并列中止</p></li>
+</ol>
+<ul class="simple">
+<li><p>昼間は明るくて、夜は暗いです。</p></li>
+<li><p>日は東から出て、西にはいります。</p></li>
+<li><p>兄は工場へ行って、妹は学校へ行きます。</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>表示方法、手段</p></li>
+</ol>
+<ul class="simple">
+<li><p>先生は立って講義をします。</p></li>
+<li><p>みんなは手をたたいて歓迎します。</p></li>
+<li><p>テレビを見たり、ラジオを聞いたりしてニュースを知ります。</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>表示原因</p></li>
+</ol>
+<ul class="simple">
+<li><p>部屋が暗くて新聞を読むことができません。</p></li>
+<li><p>この靴は小さくて履くことができません。</p></li>
+<li><p>午後会議があって空港へ行くことができません。</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>表示顺序（与「てから」表示顺序的用法相近）</p></li>
+</ol>
+<ul class="simple">
+<li><p>私はに行って雑誌を読みます。</p></li>
+<li><p>朝起きるとはをみがいて顔を洗います。</p></li>
+<li><p>みんなは入場券を買って映画館に入ります。</p></li>
+</ul>
+
+
+<h3 id="id9">三、形容词连用形<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>形容词连用形有两种形态</p>
+<ol class="arabic simple">
+<li><p>「かっ」形，后续「た」「たり」</p></li>
+</ol>
+<ul class="simple">
+<li><p>昨日は寒かったです。</p></li>
+<li><p>天気は寒かったり、暑かったりします。</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>「く」形后接「ない」「ありません」「なる」，或用来修饰用言</p></li>
+</ol>
+<ul class="simple">
+<li><p>寒くないです。</p></li>
+<li><p>寒くありません。</p></li>
+<li><p>寒くなります。</p></li>
+<li><p>朝早く起きます。</p></li>
+<li><p>夜遅く寝ます。</p></li>
+</ul>
+
+
+<h3 id="id10">四、形容动词连用形<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>形容动词的连用形主要有三种形态：</p>
+<ol class="arabic simple">
+<li><p>「だ」形，后续「た」「たり」</p></li>
+</ol>
+<ul class="simple">
+<li><p>二、三年前ここはきれいだった。</p></li>
+<li><p>静かだったり、にぎやかだったりです。</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>「で」形，主要表示并列中止</p></li>
+</ol>
+<ul class="simple">
+<li><p>あの町は静かできれいです。</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>「に」形，后续用言，构成连用修饰语，当后续动词「なる」时，表示状态的转变</p></li>
+</ol>
+<ul class="simple">
+<li><p>教室をきれいに掃除します。</p></li>
+<li><p>体が丈夫になります。</p></li>
+</ul>
+
+
+<h3 id="id11">五、「には」的用法<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>「には」用于提示存在的场所，后续谓语为存在动词。</p>
+<ul class="simple">
+<li><p>日本の新聞には一般紙と専門紙があります。</p></li>
+<li><p>ペキンには大きい建物がたくさんアルマス。</p></li>
+<li><p>教室の中には学生が大勢います。</p></li>
+</ul>
+
+
+<h3 id="id12">六、副助词「だけ」<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>接在体言后边，表示限定。相当于汉语的“只、仅与「しか……ない」的意义类似。</p>
+<ul class="simple">
+<li><p>一般紙は朝刊と夕刊だけです。</p></li>
+<li><p>新聞は一種類だけ読みます。＝新聞を１種類しか読みません。</p></li>
+<li><p>先生は机は一つだけです。＝先生の机は一つしかありません。</p></li>
+</ul>
+
+
+
+<h2 id="id13">课后练习<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="chap16-q.html">练习题</a></li>
+</ul>
+</div>
+
+
+<h2 id="id14">补充生词<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<table id="id16">
+<caption><span class="caption-text">生词表</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>单词</p></th>
+<th class="head"><p>词类</p></th>
+<th class="head"><p>释义</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>しけん[試験]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>しなもの[品物]</p></td>
+<td><p>名</p></td>
+<td><p>物品</p></td>
+</tr>
+<tr class="row-even"><td><p>のぼる[登る]</p></td>
+<td><p>自五</p></td>
+<td><p>攀登</p></td>
+</tr>
+<tr class="row-odd"><td><p>かわ[川]</p></td>
+<td><p>名</p></td>
+<td><p>河</p></td>
+</tr>
+<tr class="row-even"><td><p>およぐ[泳ぐ]</p></td>
+<td><p>自五</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>すごす[過ごす]</p></td>
+<td><p>他五</p></td>
+<td><p>度，过</p></td>
+</tr>
+<tr class="row-even"><td><p>おもちゃ[玩具]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>ばあい[場合]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>ふく[服]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>かえる[替える]</p></td>
+<td><p>他下一</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>ふうぞく[風俗]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>しゅうかん[習慣]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>ふちゅうい[不注意]</p></td>
+<td><p>名-形动</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>じこ[事故]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>おこる[起こる]</p></td>
+<td><p>自五</p></td>
+<td><p>发生</p></td>
+</tr>
+<tr class="row-odd"><td><p>事故が起こる</p></td>
+<td><p>名</p></td>
+<td><p>发生事故</p></td>
+</tr>
+<tr class="row-even"><td><p>できる[出来る]</p></td>
+<td><p>名</p></td>
+<td><p>能，会</p></td>
+</tr>
+<tr class="row-odd"><td><p>ぶんしょう[文章]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>ピアノ</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>ひく[弾く]</p></td>
+<td><p>名</p></td>
+<td><p>弹奏</p></td>
+</tr>
+<tr class="row-even"><td><p>かんじ[漢字]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>すうがく[数学]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>くつ[靴]</p></td>
+<td><p>名</p></td>
+<td><p>鞋</p></td>
+</tr>
+<tr class="row-odd"><td><p>ぬぐ[脱ぐ]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>でんき[電気]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>けす[消す]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>電気を消す</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>もつ[持つ]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>やきゅう[野球]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>すき[好き]</p></td>
+<td><p>名</p></td>
+<td><p>喜欢</p></td>
+</tr>
+<tr class="row-even"><td><p>はげしい[激しい]</p></td>
+<td><p>名</p></td>
+<td><p>激烈，剧烈</p></td>
+</tr>
+<tr class="row-odd"><td><p>きらい[嫌い]</p></td>
+<td><p>名</p></td>
+<td><p>厌恶</p></td>
+</tr>
+<tr class="row-even"><td><p>できるだけ</p></td>
+<td><p>名</p></td>
+<td><p>尽可能</p></td>
+</tr>
+<tr class="row-odd"><td><p>チーム</p></td>
+<td><p>名</p></td>
+<td><p>team</p></td>
+</tr>
+<tr class="row-even"><td><p>しょうぶ[勝負]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>うれしい[嬉しい]</p></td>
+<td><p>形</p></td>
+<td><p>喜悦</p></td>
+</tr>
+<tr class="row-even"><td><p>かなしい[悲しい]</p></td>
+<td><p>形</p></td>
+<td><p>悲伤</p></td>
+</tr>
+<tr class="row-odd"><td><p>ほうほう[方法]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>スキー</p></td>
+<td><p>名</p></td>
+<td><p>ski，滑雪</p></td>
+</tr>
+<tr class="row-odd"><td><p>ひま[暇]</p></td>
+<td><p>名</p></td>
+<td><p>余暇，闲工夫</p></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="chap15-qa.html" title="答案"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> Previous </span> 答案 </span>
+              </div>
+            </a>
+          
+          
+            <a href="chap16-q.html" title="练习题"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> Next </span> 练习题 </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2020, malic.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>

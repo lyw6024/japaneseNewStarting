@@ -1,0 +1,789 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>第七课 訪問 &#8212; Japanese New Starting  documentation</title>
+    <link rel="stylesheet" href="../_static/material.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="第九课 俳句の勉強をするなら" href="chap09.html" />
+    <link rel="prev" title="第六课 私たちにいろいろな訓練を遣らせます" href="chap06.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=blue-grey data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#book2/chap07" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="Japanese New Starting  documentation"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">Japanese New Starting  documentation</span>
+          <span class="md-header-nav__topic"> 第七课 訪問 </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="GET" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search"
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Japanese New Starting  documentation</a></li>
+          <li class="md-tabs__item"><a href="index.html" class="md-tabs__link">第二册</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="Japanese New Starting documentation" class="md-nav__button md-logo">
+      
+        <img src="../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="Japanese New Starting documentation">Japanese New Starting  documentation</a>
+  </label>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#book2-chap07--page-root" class="md-nav__link">第七课 訪問</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id2" class="md-nav__link">课文</a>
+        </li>
+        <li class="md-nav__item"><a href="#id3" class="md-nav__link">会話</a>
+        </li>
+        <li class="md-nav__item"><a href="#id4" class="md-nav__link">生词</a>
+        </li>
+        <li class="md-nav__item"><a href="#id5" class="md-nav__link">句型</a>
+        </li>
+        <li class="md-nav__item"><a href="#id6" class="md-nav__link">语法</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id7" class="md-nav__link">一、 敬语助动词「れる」「られる」</a>
+        </li>
+        <li class="md-nav__item"><a href="#id8" class="md-nav__link">二、敬语动词</a>
+        </li>
+        <li class="md-nav__item"><a href="#id9" class="md-nav__link">三、补助动词「みる」</a>
+        </li>
+        <li class="md-nav__item"><a href="#id10" class="md-nav__link">四、形式名词「ところ」</a>
+        </li>
+        <li class="md-nav__item"><a href="#id11" class="md-nav__link">五、接尾词「だらけ」</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#id12" class="md-nav__link">补充生词</a>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/book2/chap07.rst.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  
+<h1 id="book2-chap07--page-root">第七课 訪問<a class="headerlink" href="#book2-chap07--page-root" title="Permalink to this headline">¶</a></h1>
+
+<h2 id="id2">课文<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>日本に着いてから一週間後、私は中村君の家を訪ねた。彼の家は私鉄の沿線で、駅からあまり遠くない、閑静な住宅街にある。都心からは約一時間架かった。</p>
+<p>応接間に通され、中村君のお母さんに挨拶をしているところに、お父さんも出てこられた。お父さんは出版関係の仕事をなさっている。二年前にアメリカに来られた時に、山田さんの紹介でお会いしているので、初対面ではない。</p>
+<p>考えてみれば、中村さん親子にはすっかりお世話になっている。お父さんには、今度日本に来るにあたって、保証人になっていただいたし、春男君には、大学に案内してもらったり、アパート探しを手伝ってもらったりした。</p>
+<p>日本の家庭を初めて訪ねる私は、畳の上にうまく座れるだろうかなどと、緊張していたが、通された部屋は日本間ではなく、小さいが、洋間で、まずはほっとした。しかし、一方ではちょっと期待を裏切られたような気もした。</p>
+<p>山田先生の近況や私の家族のことなどか話題になった。日本語が上手だと褒められたが、どうも敬語の使い方は難しい。特に女性との話し方に慣れていないので、お母さんの話にはうまく受け答えができなくて困った。きっと間違いだらけだっただろうと、今思うと恥ずかしい。</p>
+<p>夕食は、お客さん扱いはやめようという春男君の提案で茶の間で一緒にご馳走になることになった。茶の間にはこたつがあり、茶だんすがあり、初めて日本人の家族にいる実感がわいた。箸で食べた日本の食事も美味しかったが、久しぶりに家庭的な雰囲気を味わうことができたことは、何にもましてうれしかった。</p>
+
+
+<h2 id="id3">会話<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>（1）</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>場所：春男の家
+人物：
+    A‐春男の母
+    B‐春男の友人　陳
+    C‐春男の父
+</pre></div>
+</div>
+<p>A:　いらっしゃいませ。春男の母でございます。</p>
+<p>B:　は、陳です。初めまして。春男君にはたいへんお世話になっております。</p>
+<p>A:　いいえ、こちらこそ。本当によくいらしてくださいました。遠くて不便な所ですのに。</p>
+<p>B:　いいえ、このあたりは緑も多いし、静かでいいですね。</p>
+<p>（春男の父が行ってくる）</p>
+<p>C:　や、陳さん、いらっしゃい。</p>
+<p>B:　は、ごぶさたいたしまして。</p>
+<p>A:　この前中国に行ったとき、お会いしたんですね、お父さんは。</p>
+<p>C:　うん、そうだよ。</p>
+<p>B:　山田さんのご紹介でお目にかかりました。</p>
+<p>C:　そうでしたね。その後山田さんはお元気ですか。</p>
+<p>B:　ええ、相変わらず、忙しそうにしていらっしゃいます。</p>
+<p>A:　陳さん、どうぞお楽に。</p>
+<p>B:　はい、ありがとうございます。</p>
+<p>A:　本当に日本語がお上手ですね。それだけになるまでには、ずいぶん練習なさったんでしょうね。</p>
+<p>B:　いいえ、まだまだです。特に敬語の使い方は難しくて、よく間違えます。</p>
+<p>（2）</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>場所：春男の家
+人物：
+    A‐春男の母
+    B-春男
+    C‐春男の友人　陳
+</pre></div>
+</div>
+<p>A:　お食事の用意ができましたよ。</p>
+<p>B:　どこの部屋？</p>
+<p>A:　お座敷に用意したけど。</p>
+<p>B:　どうかなあ、もうお客さん扱いはやめた方がいいんじゃないかな。陳さん、どう？</p>
+<p>C:　ええ、そうしていただいた方がいいですよ。</p>
+<p>B:　じゃ、茶の間にしようよ。お母さん、いいでしょう？</p>
+<p>A:　ええ、いいですよ。</p>
+
+
+<h2 id="id4">生词<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<table id="id13">
+<caption><span class="caption-text">生词表</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>单词</p></th>
+<th class="head"><p>词类</p></th>
+<th class="head"><p>释义</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ほうもん[訪問]</p></td>
+<td><p>名·他サ</p></td>
+<td><p>拜访</p></td>
+</tr>
+<tr class="row-odd"><td><p>つく[着く]</p></td>
+<td><p>自五</p></td>
+<td><p>到达</p></td>
+</tr>
+<tr class="row-even"><td><p>なかむら[中村]</p></td>
+<td><p>名</p></td>
+<td><p>（姓）</p></td>
+</tr>
+<tr class="row-odd"><td><p>してつ[私鉄]</p></td>
+<td><p>名</p></td>
+<td><p>私营铁路</p></td>
+</tr>
+<tr class="row-even"><td><p>えんせん[沿線]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>かんせい[閑静]</p></td>
+<td><p>名·形动</p></td>
+<td><p>幽静</p></td>
+</tr>
+<tr class="row-even"><td><p>じゅうたくがい[住宅街]</p></td>
+<td><p>名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>としん[都心]</p></td>
+<td><p>名</p></td>
+<td><p>都市中心</p></td>
+</tr>
+<tr class="row-even"><td><p>とおす[通す]</p></td>
+<td><p>名</p></td>
+<td><p>通过；（把客人）让到里边</p></td>
+</tr>
+<tr class="row-odd"><td><p>しゅっぱん[出版]</p></td>
+<td><p>名·他サ</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>しょたいめん[初対面]</p></td>
+<td><p>名</p></td>
+<td><p>初次见面</p></td>
+</tr>
+<tr class="row-odd"><td><p>すっかり</p></td>
+<td><p>副</p></td>
+<td><p>完全、全部</p></td>
+</tr>
+<tr class="row-even"><td><p>せわ[世話]</p></td>
+<td><p>名</p></td>
+<td><p>帮助、照料</p></td>
+</tr>
+<tr class="row-odd"><td><p>ほしょうにん[保証人]</p></td>
+<td><p>名</p></td>
+<td><p>担保人</p></td>
+</tr>
+<tr class="row-even"><td><p>はるお[春男]</p></td>
+<td><p>名</p></td>
+<td><p>（人名）</p></td>
+</tr>
+<tr class="row-odd"><td><p>アパート探し</p></td>
+<td><p>名</p></td>
+<td><p>找公寓</p></td>
+</tr>
+<tr class="row-even"><td><p>きんちょう[緊張]</p></td>
+<td><p>名·自サ</p></td>
+<td><p>紧张</p></td>
+</tr>
+<tr class="row-odd"><td><p>ほっと</p></td>
+<td><p>副·自サ</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>きたい[期待]</p></td>
+<td><p>名·他サ</p></td>
+<td><p>期望，希望</p></td>
+</tr>
+<tr class="row-odd"><td><p>うらぎる[裏切る]</p></td>
+<td><p>他五</p></td>
+<td><p>背叛、辜负</p></td>
+</tr>
+<tr class="row-even"><td><p>きんきょう[近況]</p></td>
+<td><p>名</p></td>
+<td><p>近况</p></td>
+</tr>
+<tr class="row-odd"><td><p>わだい[話題]</p></td>
+<td><p>名</p></td>
+<td><p>话题</p></td>
+</tr>
+<tr class="row-even"><td><p>うけこたえ[受け答え]</p></td>
+<td><p>名</p></td>
+<td><p>对答、应答</p></td>
+</tr>
+<tr class="row-odd"><td><p>だらけ</p></td>
+<td><p>接尾</p></td>
+<td><p>满、全、净</p></td>
+</tr>
+<tr class="row-even"><td><p>あつかい[扱い]</p></td>
+<td><p>名</p></td>
+<td><p>（当作……）看待、待遇</p></td>
+</tr>
+<tr class="row-odd"><td><p>やめる[止める]</p></td>
+<td><p>他下一</p></td>
+<td><p>停止、放弃、取消</p></td>
+</tr>
+<tr class="row-even"><td><p>ちゃのま[茶の間]</p></td>
+<td><p>名</p></td>
+<td><p>餐室、茶室</p></td>
+</tr>
+<tr class="row-odd"><td><p>ごちそう[ご馳走]</p></td>
+<td><p>名</p></td>
+<td><p>酒席、款待</p></td>
+</tr>
+<tr class="row-even"><td><p>ご馳走になる</p></td>
+<td><p>连语</p></td>
+<td><p>被请（吃饭）</p></td>
+</tr>
+<tr class="row-odd"><td><p>ちゃだんす[茶箪笥]</p></td>
+<td><p>名</p></td>
+<td><p>茶柜、碗柜</p></td>
+</tr>
+<tr class="row-even"><td><p>じっかん[実感]</p></td>
+<td><p>名·他サ</p></td>
+<td><p>真实感、体会、</p></td>
+</tr>
+<tr class="row-odd"><td><p>わく[涌く]</p></td>
+<td><p>自五</p></td>
+<td><p>涌出、冒出</p></td>
+</tr>
+<tr class="row-even"><td><p>はし[箸]</p></td>
+<td><p>名</p></td>
+<td><p>筷子</p></td>
+</tr>
+<tr class="row-odd"><td><p>ふんいき[雰囲気]</p></td>
+<td><p>名</p></td>
+<td><p>气氛</p></td>
+</tr>
+<tr class="row-even"><td><p>あじわう[味わう]</p></td>
+<td><p>他五</p></td>
+<td><p>品尝、玩赏</p></td>
+</tr>
+<tr class="row-odd"><td><p>ごぶさた[ご無沙汰]</p></td>
+<td><p>名</p></td>
+<td><p>久疏问候</p></td>
+</tr>
+<tr class="row-even"><td><p>目にかかる</p></td>
+<td><p>连语</p></td>
+<td><p>（敬语）见面，会面</p></td>
+</tr>
+<tr class="row-odd"><td><p>相変わらず</p></td>
+<td><p>副</p></td>
+<td><p>照旧、仍然、依旧</p></td>
+</tr>
+<tr class="row-even"><td><p>ざしき[座敷]</p></td>
+<td><p>名</p></td>
+<td><p>（日式）客厅</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="id5">句型<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>一、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>お（）・ご（）＋する（いたす）。
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>ただいまから、ニュースを伝えてします。</p></li>
+<li><p>すみません。ちょっとお邪魔します。</p></li>
+<li><p>今日は私がご案内いたしましょう。</p></li>
+<li><p>この問題について簡単にご説明します。</p></li>
+</ul>
+<p>二、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>お（）・ご（）＋になる。
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>しばらくお待ちになってくださいませんか。</p></li>
+<li><p>あの本はお読みになりましたか。</p></li>
+<li><p>友達とご相談になりましたね。</p></li>
+</ul>
+<p>三、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>（体言、动词连体形）にあたって
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>開会に当たって、一言ご挨拶申し上げます。</p></li>
+<li><p>中華人民共和国創建70周年の記念日を迎えるにあたって、心から慶祝の意を表します。</p></li>
+<li><p>実験をするにあたっての注意を申し上げたいと思います。</p></li>
+</ul>
+<p>四、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>（体言+の、用言连用形）ような気がする。
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>ここはあそこよりずっと寒いような気がします。</p></li>
+<li><p>ここに来ると、自分の家に帰ったような気がします。</p></li>
+<li><p>一方では、ちょっと期待を裏切られたような気もした。</p></li>
+</ul>
+<p>五、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>（体言）にもまして
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>彼は前にもまして一生懸命に勉強している。</p></li>
+<li><p>誰にもまして心を痛めている。</p></li>
+<li><p>今年は去年にもまして天候が不順だった。</p></li>
+<li><p>久しぶりに家庭の雰囲気を味わうことができたのは、何にもまして嬉しかった。</p></li>
+</ul>
+
+
+<h2 id="id6">语法<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+
+<h3 id="id7">一、 敬语助动词「れる」「られる」<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>敬语助动词「れる」「られる」接在动词未然形下面，表示对主体的尊敬。其接续法和活用与被动「れる」「られる」相同，但无命令形。</p>
+<p>未然形</p>
+<ul class="simple">
+<li><p>中村さんはまだ帰っておられないそうです。</p></li>
+</ul>
+<p>连用形
+- 科学者たちは熱心に研究していられます。
+- お父さんも出てこれられた。</p>
+<p>终止形</p>
+<ul class="simple">
+<li><p>今学期からは周先生が日本語を教えられる。</p></li>
+<li><p>校長先生も一緒に行かれるそうです。</p></li>
+</ul>
+<p>连体形</p>
+<ul class="simple">
+<li><p>あなたの考えられる通りです。</p></li>
+<li><p>引っ越される時は、ちょっとお知らせください。</p></li>
+</ul>
+<p>假定形</p>
+<ul class="simple">
+<li><p>こんな時にあの方がいられれば、いいんですね。</p></li>
+</ul>
+
+
+<h3 id="id8">二、敬语动词<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>日语中有一类无需要附加助动词就能表达敬意的动词，叫作敬语动词。
+敬语动词可分为三种：</p>
+<ul class="simple">
+<li><p>尊敬动词 —— 表示受尊敬者之动作行为的动词</p></li>
+<li><p>自谦动词 —— 为了表达对对方的尊敬，而用谦逊的态度叙述自己或自己一方的动作行为的动词。</p></li>
+<li><p>郑重动词 —— 不考虑动作的行为主体，仅在叙述上表示郑重或对听话者的敬重之意的动词。</p></li>
+</ul>
+<table id="id14">
+<caption><span class="caption-text">生词表</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>一般动词</p></th>
+<th class="head"><p>尊敬动词</p></th>
+<th class="head"><p>自谦动词</p></th>
+<th class="head"><p>郑重动词</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ある</p></td>
+<td></td>
+<td></td>
+<td><p>ござる</p></td>
+</tr>
+<tr class="row-odd"><td><p>いる</p></td>
+<td><p>いらっしゃる</p></td>
+<td><p>おる</p></td>
+<td><p>おる</p></td>
+</tr>
+<tr class="row-even"><td><p>する</p></td>
+<td><p>なさる</p></td>
+<td><p>いたす</p></td>
+<td><p>いたす</p></td>
+</tr>
+<tr class="row-odd"><td><p>言う</p></td>
+<td><p>おっしゃる</p></td>
+<td><p>申す、申し上げる</p></td>
+<td><p>申す</p></td>
+</tr>
+<tr class="row-even"><td><p>来る、行く</p></td>
+<td><p>いらっしゃる、お出でになる</p></td>
+<td><p>上がる、参る</p></td>
+<td><p>参る</p></td>
+</tr>
+<tr class="row-odd"><td><p>来る</p></td>
+<td><p>見える</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>見る</p></td>
+<td><p>ご覧になる</p></td>
+<td><p>拝見する</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>食べる、飲む</p></td>
+<td><p>召し上がる、上がる</p></td>
+<td><p>いただく</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>聞く、訪ねる</p></td>
+<td></td>
+<td><p>うかがう</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>やる、あげる</p></td>
+<td></td>
+<td><p>さしあげる</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>くれる</p></td>
+<td><p>くださる</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>もらう</p></td>
+<td></td>
+<td><p>いただく</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="id9">三、补助动词「みる」<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>「みる」接在接续助词「て」的后面，为补助动词，与动词结合起来，表示“……试试看”“……一下”的意思</p>
+<ul class="simple">
+<li><p>やってみてください。</p></li>
+<li><p>交番で尋ねてみましょう。</p></li>
+<li><p>一口食べてみると、美味しい料理だった。</p></li>
+<li><p>考えてみれば、中村さん親子にはすっかりお世話になっている。</p></li>
+</ul>
+
+
+<h3 id="id10">四、形式名词「ところ」<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>「ところ」接体言+の或用言连体形，表示时候、场合。</p>
+<ul class="simple">
+<li><p>今のところ、まだ日本語が上手に話せません。</p></li>
+<li><p>いいところに来たね。</p></li>
+<li><p>今出かけるところだ。</p></li>
+<li><p>部屋の掃除をしているところに友達が来ました。</p></li>
+<li><p>北京から帰ってきたところです。</p></li>
+</ul>
+
+
+<h3 id="id11">五、接尾词「だらけ」<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>接在体言之后，表示“满是……”的意思</p>
+<ul class="simple">
+<li><p>この部屋は何年も使わないのでほこりだらけだ。 / 这房间好多年没有用过，满是灰尘。</p></li>
+<li><p>怪我をして血だらけになった。 / 受了伤满身是血。</p></li>
+<li><p>私は欠点だらけの人間です。 / 我是一个浑身是缺点的人。</p></li>
+<li><p>しわだらけのおばあさんが立っている。 / 站着一位满脸皱纹的老太太。</p></li>
+</ul>
+
+
+
+<h2 id="id12">补充生词<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<table id="id15">
+<caption><span class="caption-text">生词表</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>单词</p></th>
+<th class="head"><p>词类</p></th>
+<th class="head"><p>释义</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>びじゅつてん[美術展]</p></td>
+<td><p>名</p></td>
+<td><p>美术展览</p></td>
+</tr>
+<tr class="row-odd"><td><p>ハワイ</p></td>
+<td><p>名</p></td>
+<td><p>夏威夷</p></td>
+</tr>
+<tr class="row-even"><td><p>へんこう[変更]</p></td>
+<td><p>名·他サ</p></td>
+<td><p>更改</p></td>
+</tr>
+<tr class="row-odd"><td><p>れんらく[連絡]</p></td>
+<td><p>名·自他サ</p></td>
+<td><p>联系</p></td>
+</tr>
+<tr class="row-even"><td><p>ズボン</p></td>
+<td><p>名</p></td>
+<td><p>裤子</p></td>
+</tr>
+<tr class="row-odd"><td><p>はく[穿く]</p></td>
+<td><p>他五</p></td>
+<td><p>穿（下半身的衣物）</p></td>
+</tr>
+<tr class="row-even"><td><p>どうそうかい[同窓会]</p></td>
+<td><p>名</p></td>
+<td><p>同学会</p></td>
+</tr>
+<tr class="row-odd"><td><p>ご覧になる</p></td>
+<td><p>连语</p></td>
+<td><p>（敬语）看、观看</p></td>
+</tr>
+<tr class="row-even"><td><p>めしあがる[召し上がる]</p></td>
+<td><p>他五</p></td>
+<td><p>（敬语）吃、喝</p></td>
+</tr>
+<tr class="row-odd"><td><p>ちこく[遅刻]</p></td>
+<td><p>名</p></td>
+<td><p>迟到</p></td>
+</tr>
+<tr class="row-even"><td><p>そけいご[尊敬語]</p></td>
+<td><p>名</p></td>
+<td><p>尊敬语</p></td>
+</tr>
+<tr class="row-odd"><td><p>けんじょうご[謙譲語]</p></td>
+<td><p>名</p></td>
+<td><p>谦让语</p></td>
+</tr>
+<tr class="row-even"><td><p>クリスマス</p></td>
+<td><p>名</p></td>
+<td><p>圣诞节</p></td>
+</tr>
+<tr class="row-odd"><td><p>でんきごたつ[電器炬燵]</p></td>
+<td><p>名</p></td>
+<td><p>电气炕炉</p></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="chap06.html" title="第六课 私たちにいろいろな訓練を遣らせます"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> Previous </span> 第六课 私たちにいろいろな訓練を遣らせます </span>
+              </div>
+            </a>
+          
+          
+            <a href="chap09.html" title="第九课 俳句の勉強をするなら"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> Next </span> 第九课 俳句の勉強をするなら </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2020, malic.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>

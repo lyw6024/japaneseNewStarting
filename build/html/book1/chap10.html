@@ -1,0 +1,751 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>第二课 新聞があります &#8212; Japanese New Starting  documentation</title>
+    <link rel="stylesheet" href="../_static/material.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="练习题" href="chap10-q.html" />
+    <link rel="prev" title="答案" href="chap09-qa.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=blue-grey data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#book1/chap10" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="Japanese New Starting  documentation"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">Japanese New Starting  documentation</span>
+          <span class="md-header-nav__topic"> 第二课 新聞があります </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="GET" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search"
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Japanese New Starting  documentation</a></li>
+          <li class="md-tabs__item"><a href="index.html" class="md-tabs__link">第一册</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="Japanese New Starting documentation" class="md-nav__button md-logo">
+      
+        <img src="../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="Japanese New Starting documentation">Japanese New Starting  documentation</a>
+  </label>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#book1-chap10--page-root" class="md-nav__link">第二课  新聞があります</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id2" class="md-nav__link">生词</a>
+        </li>
+        <li class="md-nav__item"><a href="#id3" class="md-nav__link">句型</a>
+        </li>
+        <li class="md-nav__item"><a href="#id4" class="md-nav__link">语法</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id5" class="md-nav__link">一、存在句</a>
+        </li>
+        <li class="md-nav__item"><a href="#id6" class="md-nav__link">二、场所指示代词</a>
+        </li>
+        <li class="md-nav__item"><a href="#id7" class="md-nav__link">三、格助词「が」「に」</a>
+        </li>
+        <li class="md-nav__item"><a href="#id8" class="md-nav__link">四、并列助词「と」</a>
+        </li>
+        <li class="md-nav__item"><a href="#id9" class="md-nav__link">五、「何か」「何が」「何も」</a>
+        </li>
+        <li class="md-nav__item"><a href="#id10" class="md-nav__link">六、形容词</a>
+        </li>
+        <li class="md-nav__item"><a href="#id11" class="md-nav__link">七、提示助词「も」</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#id12" class="md-nav__link">课后练习</a>
+        </li>
+        <li class="md-nav__item"><a href="#id13" class="md-nav__link">补充生词</a>
+        </li>
+        <li class="md-nav__item"><a href="#id14" class="md-nav__link">语言文化之窗</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#id15" class="md-nav__link">タバコ</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/book1/chap10.rst.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  
+<h1 id="book1-chap10--page-root">第二课  新聞があります<a class="headerlink" href="#book1-chap10--page-root" title="Permalink to this headline">¶</a></h1>
+
+<h2 id="id2">生词<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<table id="id16">
+<caption><span class="caption-text">生词表</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>单词</p></th>
+<th class="head"><p>词类</p></th>
+<th class="head"><p>释义</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>たばこ</p></td>
+<td><p>名</p></td>
+<td><p>香烟</p></td>
+</tr>
+<tr class="row-odd"><td><p>はいざら[灰皿]</p></td>
+<td><p>名</p></td>
+<td><p>烟灰缸</p></td>
+</tr>
+<tr class="row-even"><td><p>ある</p></td>
+<td><p>自五</p></td>
+<td><p>有，存在</p></td>
+</tr>
+<tr class="row-odd"><td><p>じてん[辞典]</p></td>
+<td><p>名</p></td>
+<td><p>辞典</p></td>
+</tr>
+<tr class="row-even"><td><p>きょうだい[鏡台]</p></td>
+<td><p>名</p></td>
+<td><p>梳妆台</p></td>
+</tr>
+<tr class="row-odd"><td><p>くだもの[果物]</p></td>
+<td><p>名</p></td>
+<td><p>水果鲜果</p></td>
+</tr>
+<tr class="row-even"><td><p>そこ</p></td>
+<td><p>代</p></td>
+<td><p>那里，那边</p></td>
+</tr>
+<tr class="row-odd"><td><p>ざぶとん[座布団]</p></td>
+<td><p>名</p></td>
+<td><p>（铺在席子上的）棉坐垫</p></td>
+</tr>
+<tr class="row-even"><td><p>うえ[上]</p></td>
+<td><p>名</p></td>
+<td><p>上面</p></td>
+</tr>
+<tr class="row-odd"><td><p>そろばん[算盤]</p></td>
+<td><p>名</p></td>
+<td><p>算盘</p></td>
+</tr>
+<tr class="row-even"><td><p>まんねんひつ[万年筆]</p></td>
+<td><p>名</p></td>
+<td><p>自来水笔</p></td>
+</tr>
+<tr class="row-odd"><td><p>した[下]</p></td>
+<td><p>名</p></td>
+<td><p>下面</p></td>
+</tr>
+<tr class="row-even"><td><p>えき[駅]</p></td>
+<td><p>名</p></td>
+<td><p>车站</p></td>
+</tr>
+<tr class="row-odd"><td><p>まえ[前]</p></td>
+<td><p>名</p></td>
+<td><p>前方</p></td>
+</tr>
+<tr class="row-even"><td><p>たばこや[タバコ屋]</p></td>
+<td><p>名</p></td>
+<td><p>烟草铺或烟草货商</p></td>
+</tr>
+<tr class="row-odd"><td><p>えいがかん[映画館]</p></td>
+<td><p>名</p></td>
+<td><p>电影院</p></td>
+</tr>
+<tr class="row-even"><td><p>ふうとう[封筒]</p></td>
+<td><p>名</p></td>
+<td><p>信封</p></td>
+</tr>
+<tr class="row-odd"><td><p>もうふ[毛布]</p></td>
+<td><p>名</p></td>
+<td><p>毛毯</p></td>
+</tr>
+<tr class="row-even"><td><p>こうばん[交番]</p></td>
+<td><p>名</p></td>
+<td><p>派出所</p></td>
+</tr>
+<tr class="row-odd"><td><p>おおどおり[大通り]</p></td>
+<td><p>名</p></td>
+<td><p>大街，大马路</p></td>
+</tr>
+<tr class="row-even"><td><p>いえ[家]</p></td>
+<td><p>名</p></td>
+<td><p>房屋，家庭</p></td>
+</tr>
+<tr class="row-odd"><td><p>こうえん[公園]</p></td>
+<td><p>名</p></td>
+<td><p>公园</p></td>
+</tr>
+<tr class="row-even"><td><p>ちかく[近く]</p></td>
+<td><p>名/副</p></td>
+<td><p>近处</p></td>
+</tr>
+<tr class="row-odd"><td><p>おおきい[大きい]</p></td>
+<td><p>形</p></td>
+<td><p>大的</p></td>
+</tr>
+<tr class="row-even"><td><p>はこ[箱]</p></td>
+<td><p>名</p></td>
+<td><p>箱子盒子</p></td>
+</tr>
+<tr class="row-odd"><td><p>ちいさい[小さい]</p></td>
+<td><p>形</p></td>
+<td><p>小的</p></td>
+</tr>
+<tr class="row-even"><td><p>なか[中]</p></td>
+<td><p>名</p></td>
+<td><p>……中，……里</p></td>
+</tr>
+<tr class="row-odd"><td><p>チョーク</p></td>
+<td><p>名</p></td>
+<td><p>粉笔</p></td>
+</tr>
+<tr class="row-even"><td><p>しろい[白い]</p></td>
+<td><p>形</p></td>
+<td><p>白色的</p></td>
+</tr>
+<tr class="row-odd"><td><p>あかい[赤い]</p></td>
+<td><p>形</p></td>
+<td><p>红色的</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="id3">句型<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>一、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>（体言）に（は）（体言）があります。 /在……（地方）有……（东西）。
+（体言）に（体言）はありません。 /在……没有……。
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>ここに本があります。</p></li>
+<li><p>ここに本はありません。</p></li>
+<li><p>机の上に万年筆があります。</p></li>
+<li><p>机の上に万年筆はありません。</p></li>
+</ul>
+<p>二、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>（体言）もありますか。/也有……（东西）吗?
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>机の上にま万年筆もありますか？</p></li>
+<li><p>はい、万年筆もあります。</p></li>
+<li><p>いいえ、万年筆はありません。</p></li>
+</ul>
+<p>三、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>（体言）は（体言）にあるます。
+（体言）は（体言）にありません。
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>私の家は銀行のそばにあります。</p></li>
+<li><p>私の家は銀行のそばにありません。</p></li>
+<li><p>本は机の中にあります。</p></li>
+<li><p>本は机の中にありません。</p></li>
+</ul>
+<p>四、</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>（体言）は（疑问词どこ）にありますか。
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>あなたの家はどこにありますか？私の家は銀行のそばにあります。</p></li>
+<li><p>鉛筆はどこにありますか？鉛筆は机の上にあります。</p></li>
+</ul>
+
+
+<h2 id="id4">语法<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+
+<h3 id="id5">一、存在句<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>叙述事物是否存在的句子。特征是有「ある」作谓语。</p>
+
+
+<h3 id="id6">二、场所指示代词<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>近称ここ、中称そこ、远称あそこ、不定称どこ</p>
+
+
+<h3 id="id7">三、格助词「が」「に」<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>格助词主要是接在体言后面，决定体言在句中的地位。</p>
+<ol class="arabic">
+<li><p>格助词「が」</p>
+<ul class="simple">
+<li><p>ここに新聞があります。</p></li>
+<li><p>そこに何がありますか？</p></li>
+</ul>
+<p>区别「は」与「が」：当以疑问句作主语时，主语后边用「が」，回答时也用「が」。当以疑问词作谓语时，主语后用「は」，回答也用「は」。
+有时句子没有疑问词，但内含疑问之意，为突出主语，此时也用「が」。</p>
+<ul class="simple">
+<li><p>どれがあなたの本ですか？それが私の本です。</p></li>
+<li><p>あなたの本はどれですか？私の本はそれです。</p></li>
+<li><p>それはあなたの本ですか？いいえ、これは私の本ではありません。</p></li>
+</ul>
+</li>
+<li><p>格助词「に」</p>
+<ul class="simple">
+<li><p>机の上に本があります。</p></li>
+<li><p>本は机の上にあります。</p></li>
+</ul>
+</li>
+</ol>
+
+
+<h3 id="id8">四、并列助词「と」<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>用于体言和体言之间，表示并列，相当于汉语“和”的意思。</p>
+<ul class="simple">
+<li><p>それは鉛筆と本です。</p></li>
+<li><p>ここには、タバコと灰皿がありま。</p></li>
+</ul>
+
+
+<h3 id="id9">五、「何か」「何が」「何も」<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>「何か」的か是副助词，在疑问词或不定代词后，表示不定。
+「何が」提问的是存在东西的名称，回答时只需要答出是什么。
+「何も」与否定连用，表示全面否定。</p>
+<ul class="simple">
+<li><p>机の中に何がありますか？はい、ありますいいえありません。</p></li>
+<li><p>机の上に何がありますか？机の上に本があります。</p></li>
+<li><p>机の下には何もありません。</p></li>
+</ul>
+
+
+<h3 id="id10">六、形容词<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>表示事物性质、状态的词叫形容词。在活用时，没有变化的部分是词干，有变化的部分是词尾。
+形容词以「い」结尾。形容词的连体形放在体言前边，连体形的词尾仍是「い」。</p>
+<ul class="simple">
+<li><p>これは大きい工場です。</p></li>
+<li><p>それは新しい鞄です。</p></li>
+</ul>
+
+
+<h3 id="id11">七、提示助词「も」<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>以「…も…も」的形式并提两个或两个以上的人或事物，相当于“……和……都……”。</p>
+<ul class="simple">
+<li><p>ここには大きい鞄も小さい鞄もあります。</p></li>
+<li><p>庭に白い花も赤い花もあります。</p></li>
+</ul>
+
+
+
+<h2 id="id12">课后练习<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="chap10-q.html">练习题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap10-qa.html">答案</a></li>
+</ul>
+</div>
+
+
+<h2 id="id13">补充生词<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<table id="id17">
+<caption><span class="caption-text">生词表</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>单词</p></th>
+<th class="head"><p>词类</p></th>
+<th class="head"><p>释义</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>よこ[横]</p></td>
+<td><p>名</p></td>
+<td><p>侧面，旁边</p></td>
+</tr>
+<tr class="row-odd"><td><p>がっこう[学校]</p></td>
+<td><p>名</p></td>
+<td><p>学校</p></td>
+</tr>
+<tr class="row-even"><td><p>ほんや[本屋]</p></td>
+<td><p>名</p></td>
+<td><p>书店</p></td>
+</tr>
+<tr class="row-odd"><td><p>そば[側]</p></td>
+<td><p>名</p></td>
+<td><p>附近，旁边</p></td>
+</tr>
+<tr class="row-even"><td><p>びょういん[病院]</p></td>
+<td><p>名</p></td>
+<td><p>医院</p></td>
+</tr>
+<tr class="row-odd"><td><p>となり[隣]</p></td>
+<td><p>名</p></td>
+<td><p>邻室，隔壁</p></td>
+</tr>
+<tr class="row-even"><td><p>この</p></td>
+<td><p>连体</p></td>
+<td><p>这，这个</p></td>
+</tr>
+<tr class="row-odd"><td><p>しゃしん[写真]</p></td>
+<td><p>名</p></td>
+<td><p>照片</p></td>
+</tr>
+<tr class="row-even"><td><p>トイレ</p></td>
+<td><p>名</p></td>
+<td><p>厕所</p></td>
+</tr>
+<tr class="row-odd"><td><p>デパート</p></td>
+<td><p>名</p></td>
+<td><p>百货店</p></td>
+</tr>
+<tr class="row-even"><td><p>コンピュータ</p></td>
+<td><p>名</p></td>
+<td><p>电脑</p></td>
+</tr>
+<tr class="row-odd"><td><p>としょしつ[図書室]</p></td>
+<td><p>名</p></td>
+<td><p>图书室</p></td>
+</tr>
+<tr class="row-even"><td><p>き[木]</p></td>
+<td><p>名</p></td>
+<td><p>树</p></td>
+</tr>
+<tr class="row-odd"><td><p>はな[花]</p></td>
+<td><p>名</p></td>
+<td><p>花</p></td>
+</tr>
+<tr class="row-even"><td><p>いけ[池]</p></td>
+<td><p>名</p></td>
+<td><p>池</p></td>
+</tr>
+<tr class="row-odd"><td><p>やま[山]</p></td>
+<td><p>名</p></td>
+<td><p>山</p></td>
+</tr>
+<tr class="row-even"><td><p>ばいてん[売店]</p></td>
+<td><p>名</p></td>
+<td><p>小卖部</p></td>
+</tr>
+<tr class="row-odd"><td><p>ジュース</p></td>
+<td><p>名</p></td>
+<td><p>果汁</p></td>
+</tr>
+<tr class="row-even"><td><p>コカ・コーラ</p></td>
+<td><p>名</p></td>
+<td><p>可口可乐</p></td>
+</tr>
+<tr class="row-odd"><td><p>ミネラルウォーター</p></td>
+<td><p>名</p></td>
+<td><p>矿泉水</p></td>
+</tr>
+<tr class="row-even"><td><p>さけ[酒]</p></td>
+<td><p>名</p></td>
+<td><p>酒</p></td>
+</tr>
+<tr class="row-odd"><td><p>ちず[地図]</p></td>
+<td><p>名</p></td>
+<td><p>地图</p></td>
+</tr>
+<tr class="row-even"><td><p>うしろ[後ろ]</p></td>
+<td><p>名</p></td>
+<td><p>后面</p></td>
+</tr>
+<tr class="row-odd"><td><p>こくばん[黒板]</p></td>
+<td><p>名</p></td>
+<td><p>黑板</p></td>
+</tr>
+<tr class="row-even"><td><p>がいこくご[外国語]</p></td>
+<td><p>名</p></td>
+<td><p>外语</p></td>
+</tr>
+<tr class="row-odd"><td><p>ふでばこ[筆箱]</p></td>
+<td><p>名</p></td>
+<td><p>铅笔盒</p></td>
+</tr>
+<tr class="row-even"><td><p>ながい[長い]</p></td>
+<td><p>形</p></td>
+<td><p>长的</p></td>
+</tr>
+<tr class="row-odd"><td><p>みじかい[短い]</p></td>
+<td><p>形</p></td>
+<td><p>短的</p></td>
+</tr>
+<tr class="row-even"><td><p>しりょうしつ[資料室]</p></td>
+<td><p>名</p></td>
+<td><p>资料室</p></td>
+</tr>
+<tr class="row-odd"><td><p>あの</p></td>
+<td><p>连体</p></td>
+<td><p>那个</p></td>
+</tr>
+<tr class="row-even"><td><p>いっかい[一階]</p></td>
+<td><p>名</p></td>
+<td><p>一层</p></td>
+</tr>
+<tr class="row-odd"><td><p>にかい[二階]</p></td>
+<td><p>名</p></td>
+<td><p>二层</p></td>
+</tr>
+<tr class="row-even"><td><p>しゅくしゃ[宿舎]</p></td>
+<td><p>名</p></td>
+<td><p>宿舍</p></td>
+</tr>
+<tr class="row-odd"><td><p>ぼうし[帽子]</p></td>
+<td><p>名</p></td>
+<td><p>帽子</p></td>
+</tr>
+<tr class="row-even"><td><p>りょう[寮]</p></td>
+<td><p>名</p></td>
+<td><p>宿舍</p></td>
+</tr>
+<tr class="row-odd"><td><p>ほんだな[本棚]</p></td>
+<td><p>名</p></td>
+<td><p>书架</p></td>
+</tr>
+<tr class="row-even"><td><p>れいぞうこ[冷蔵庫]</p></td>
+<td><p>名</p></td>
+<td><p>冰箱</p></td>
+</tr>
+<tr class="row-odd"><td><p>タオル</p></td>
+<td><p>名</p></td>
+<td><p>毛巾</p></td>
+</tr>
+<tr class="row-even"><td><p>うら[裏]</p></td>
+<td><p>名</p></td>
+<td><p>后，后边</p></td>
+</tr>
+<tr class="row-odd"><td><p>あたり[辺り]</p></td>
+<td><p>名</p></td>
+<td><p>附近，周围</p></td>
+</tr>
+<tr class="row-even"><td><p>だいどころ[台所]</p></td>
+<td><p>名</p></td>
+<td><p>厨房</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="id14">语言文化之窗<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+
+<h3 id="id15">タバコ<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/chap10-w1.png" src="../_images/chap10-w1.png"/>
+
+
+
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="chap09-qa.html" title="答案"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> Previous </span> 答案 </span>
+              </div>
+            </a>
+          
+          
+            <a href="chap10-q.html" title="练习题"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> Next </span> 练习题 </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2020, malic.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>
