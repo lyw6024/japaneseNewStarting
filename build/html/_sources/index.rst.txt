@@ -22,12 +22,13 @@ Japanese New Starting
    :maxdepth: 2
    :caption: 总目录:
 
-   book1/index
-   book2/index
-   rz2/index
-   book3/index
-   rz3/index
+   training_n1/index
    kanzen_n2_bunpou/index
+   rz3/index
+   book3/index
+   rz2/index
+   book2/index
+   book1/index
 
 
 

@@ -28,6 +28,7 @@ author = 'malic'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx_togglebutton'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -50,8 +51,7 @@ exclude_patterns = []
 #pip install git+https://github.com/bashtage/sphinx-material.git
 ############
 
-html_theme = 'sphinx_material'
-
+html_theme = 'haiku'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
