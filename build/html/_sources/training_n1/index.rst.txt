@@ -7,3 +7,4 @@ N1研修
 
    test00
    test01
+   test07
