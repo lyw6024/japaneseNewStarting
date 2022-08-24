@@ -51,7 +51,7 @@ exclude_patterns = []
 #pip install git+https://github.com/bashtage/sphinx-material.git
 ############
 
-html_theme = 'haiku'
+html_theme = 'sphinx_material'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
