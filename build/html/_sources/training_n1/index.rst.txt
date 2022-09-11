@@ -5,6 +5,8 @@ N1研修
    :maxdepth: 3
    :caption: Contents:
 
+   note04
+   note05
    test00-bunpo
    test01-bunpo
    test01-dokkai
